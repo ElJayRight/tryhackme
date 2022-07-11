@@ -1,4 +1,5 @@
 What is Active Directory
+
 AD is a collection of machines and servers. Consisting of
  - Domain Controllers
  - Forests, Trees, Domians
@@ -8,4 +9,5 @@ AD is a collection of machines and servers. Consisting of
  - Domain Services
  
  Why use AD
+ 
  Cause there is nothing else.
