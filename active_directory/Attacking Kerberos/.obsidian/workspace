@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "07 - Golden and Silver Ticket Attacks with minikatz.md",
+            "file": "01 - Introduction.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07 - Golden and Silver Ticket Attacks with minikatz.md",
+                "file": "01 - Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,13 +88,13 @@
   },
   "active": "054980559b1d4165",
   "lastOpenFiles": [
+    "01 - Introduction.md",
     "07 - Golden and Silver Ticket Attacks with minikatz.md",
     "06 - Pass the Ticket with mimikatz.md",
     "08 - Kerberos Backdoors with mimikatz.md",
     "05 - AS-REP Roasting with Rubeus.md",
     "04 - Kerberoasting with Rubeus and Impacket.md",
     "03 - Harvesting and Brute-Forcing Tickets with Rubeus.md",
-    "02 - Enumeration with Kerbrute.md",
-    "01 - Introduction.md"
+    "02 - Enumeration with Kerbrute.md"
   ]
 }
