@@ -13,3 +13,38 @@ Common Terms:
 - Service Long Term Secret Key (Service LT Key) - The service key is based on the service account. It is used to encrypt the service portion of the service ticket and sign the PAC.
 - Session Key - Issued bu the KDC when a TGT is issued. The suer will provide the session key to the KDC along with the TGT when requesting a service ticket
 - Privilege Attribute Certificate (PAC) - The PAC holds all of the user's relevant information. is sent with the TGT to the KDC to be signed by the Target LT Key and the KDC LT Key in order to validate the user.
+
+
+AS-REQ with pre-auth in detail.
+
+AS-REQ in kerberos auth starts when a user requests a TGT from the KDC. In order to validate the user and create a TGT the KDC follows these step.
+- User encrypts a timestamp NT hash and sends it to the AS.
+- The KDC attempts to decrypt the timestamp using the NT hash from the user.
+- The KDC will give a TGT and a session key for the user.
+
+Ticket Granting Ticket Contents
+
+the TGT is provided by the user to the KDC -> KDC vsalidates the TGT and gives back a service ticket
+
+Service Ticket Contents
+Two portions
+Service: User Details, Session Key, Encrypts the ticket with the service account NTLM hash.
+User: Validity Timestamp, Session Key, Encrupts with the TGT session key
+
+Kerberos Authentication Overview:
+
+AS-REQ - 1). The client requests an Authentication Ticket or TGT
+AS-REP - 2). The Key Distribution Center verifies the client and sends back an encrypted TGT
+TGS-REQ - 3). Client sends the encrypted TGT to the TGS with the SPN of the service the clinet wants to access.
+TGS-REP - 4). The KDC verifies the TGT of the user and that the user has access to the service, then sends a valid session key for the service to the client.
+AP-REQ -5). the client requests the service and sends the valid session key to prove the user has access.
+AP-REP - 6). the service grants access.
+
+Attack Privilege Requirements
+- Kerbrute Enumeration - No doamin access required
+- Pass the Ticket - Access as a user to the domain required
+- Kerberoasting - Access as any user required
+- AS-REP Roasting - Access as any user required
+- Golden Ticket - Full domain compromise (DA) required
+- Silver Ticket - Service hash required
+- Skeleton Key - Full domain compromise (DA) requried
