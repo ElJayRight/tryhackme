@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01 - Introduction to AD Breaches.md",
-            "mode": "source"
+            "file": "04 - LDAP Bind Credentials.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Introduction to AD Breaches.md",
+                "file": "04 - LDAP Bind Credentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,13 +89,13 @@
   },
   "active": "6216aa481e76af87",
   "lastOpenFiles": [
+    "03 - NTLM Authernticated Services.md",
+    "02 - OSINT and Phishing.md",
     "01 - Introduction to AD Breaches.md",
     "07 - Configuration Files.md",
     "Untitled 1.md",
     "05 - Authenrication Relays.md",
     "06 - Microsoft Deployment Toolkit.md",
-    "04 - LDAP Bind Credentials.md",
-    "03 - NTLM Authernticated Services.md",
-    "02 - OSINT and Phishing.md"
+    "04 - LDAP Bind Credentials.md"
   ]
 }
